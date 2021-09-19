@@ -1,0 +1,23 @@
+<button (click)="home()" style="background-color: purple;"> <mat-icon title="Home Page" class="sidenav-icon">arrow_back_ios</mat-icon>Home</button>
+<div  style="overflow-x:auto;margin-left: 30px;">
+  <div  >
+    <div >
+    <h1>{{currentRestaurant.restaurantName}}</h1>
+    <p class="p1">{{currentRestaurant.restaurantDescription}}</p>
+
+  </div>
+  <div  style="margin-left:517px; margin-top: -178px;">
+    <img  [src]="currentRestaurant.restaurantImage" height="400px" width="700px">
+  </div>
+  </div>
+  <h2>Menu</h2>
+  <section style="display:inline-flex;" *ngFor="let data of menuDetails">
+    <div style="display: block;"> &nbsp;&nbsp;&nbsp;
+      <img  [src]="data.itemPhoto" [alt]="data.itemName" height="200px" width="300px">
+      <div class=row>
+      <p >{{data.itemName}}</p>
+      <p style="color: purple;">€{{data.itemCost}}</p>
+    </div>
+  </div>
+</section>
+

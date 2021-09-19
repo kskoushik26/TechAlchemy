@@ -1,0 +1,41 @@
+
+.container {
+    width: 100%;
+  }
+
+  #sidebar-wrapper {
+    left: 0;
+    width: 230px;
+    background-color: whitesmoke;
+    color: black;
+    overflow: auto;
+    position: fixed;
+    height: 94.5%;
+    z-index: 1;
+    zoom: 90%;
+    transition: all 300ms linear;
+  }
+  .sideNavNames {
+    padding: 1%;
+    font-size: 20px;
+    font-weight: regular;
+    /* font-family: ubuntu; */
+    color:purple;
+  } 
+  .mat-icon{
+  color:purple
+  }
+  .heading{
+      color: purple;
+  }
+  .img{
+    margin-bottom: -7px;
+  }
+  .is-active{
+    color: white !important ;
+    border-left: 3px solid rgb(72, 148, 235);
+    background: #202d3d;
+}
+.iconActive:hover{
+  color: white !important;
+}

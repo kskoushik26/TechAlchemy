@@ -1,0 +1,40 @@
+
+<app-restaurant></app-restaurant>
+<div style="margin-left:230px">
+  <h2>Category</h2>
+  <div class="row">
+  <span>
+    <img src="assets/carrows.jfif" height="15px" width="25px" alt="hotel"/>
+    <span >Baked</span>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span>
+    <img src="assets/Burger.png" height="15px" width="25px" alt="hotel"/>
+    <span >Sweet</span>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span>
+    <img src="assets/pizzahut.png" height="15px" width="25px" alt="hotel"/>
+    <span >Hot Dish</span>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span>
+    <img src="assets/macd.png" height="15px" width="25px" alt="hotel"/>
+    <span >Fast Food</span>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span>
+    <img src="assets/macd.png" height="15px" width="25px" alt="hotel"/>
+    <span >Salads</span>
+  </span>
+  </div>
+  <h2>Restaurants</h2>
+  <section style="display:inline-flex;" *ngFor="let res of restaurants">
+    <div style="display: block;"> &nbsp;&nbsp;
+              <img  [src]="res.restaurantImage" height="200px" width="300px">
+              
+              <p style="margin-left:12px">{{res.restaurantName}}<button *ngIf= openFlag style="float: right; color: green;" (click)="detailsPage(res)">Open now</button><button *ngIf= !openFlag style="float: right;color: red;" >Closed</button></p>
+             
+            </div>
+      </section>
+</div>
